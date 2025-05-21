@@ -29,6 +29,21 @@ config:
   import:
     contact_storage: '*'
     linkit: '*'
+    node:
+      # Import config which is imported by the Standard profile,
+      # exclude view_mode.rss, include optional views.
+      - core.entity_view_mode.node.full
+      - core.entity_view_mode.node.teaser
+      - system.action.node_delete_action
+      - system.action.node_make_sticky_action
+      - system.action.node_make_unsticky_action
+      - system.action.node_promote_action
+      - system.action.node_publish_action
+      - system.action.node_save_action
+      - system.action.node_unpromote_action
+      - system.action.node_unpublish_action
+      - views.view.content
+      - views.view.frontpage
     quick_node_clone: '*'    
   # Media is installed so include Media persmissions here.
   actions:
@@ -40,6 +55,3 @@ config:
         - 'access user contact forms'
         - 'use text format basic_html'
         - 'use text format summary_fields'
-    field.field.block_content.basic.body:
-      setSettings:
-        allowed_formats: basic_html
