@@ -21,8 +21,9 @@ install:
   - layout_paragraphs
   - linkit
   - paragraphs
+  - pathauto
   - quick_node_clone
-  - user_contacts
+  - user_contactlink
    #- tac_lite
 config:
   strict: false
