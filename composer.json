@@ -12,12 +12,10 @@
     }
   ],
   "repositories": {
-    "bikeclub_media": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_media" },
-    "user_contacts": { "type": "vcs", "url": "https://github.com/NCole29/user_contacts" }
+    "bikeclub_media": { "type": "vcs", "url": "https://github.com/NCole29/bikeclub_media" }
   },
   "require": {
-    "bikeclub/bikeclub_media": "^1.0",
-    "bikeclub/user_contacts": "^1.0",		
+    "bikeclub/bikeclub_media": "dev-main",
     "drupal/contact_storage": "*",
     "drupal/entity_reference_revisions": "^1.0",
     "drupal/layout_builder_admin_theme": "^2.0",
