@@ -16,6 +16,7 @@
   },
   "require": {
     "bikeclub/bikeclub_media": "dev-main",
+    "drupal/add_content_by_bundle": "^1.2",
     "drupal/contact_storage": "*",
     "drupal/entity_reference_revisions": "^1.0",
     "drupal/layout_builder_admin_theme": "^2.0",
@@ -24,7 +25,8 @@
     "drupal/linkit": "^7.0",
     "drupal/paragraphs": "^1.0",
     "drupal/pathauto": "^1.13",
-    "drupal/quick_node_clone": "^1.22"	
+    "drupal/quick_node_clone": "^1.22",
+    "drupal/tac_lite": "^2.0"
   },
   "version": "1.0.1"
 }
