@@ -6,14 +6,10 @@ recipes:
   - bikeclub_media
 install:
   - ckeditor5
-  - contact
-  - filter
   - layout_builder
   - layout_discovery
   - node
   - options
-  - taxonomy
-  - text
   # Contrib.
   - add_content_by_bundle  
   - contact_storage
@@ -32,12 +28,12 @@ config:
   strict: false
   import:
     contact_storage: '*'
-    filter: '*'
     linkit: '*'
     node:
       # Import config which is imported by the Standard profile,
-      # exclude view_mode.rss, include optional views.
+      # exclude field.storage.node.body. Include optional views.
       - core.entity_view_mode.node.full
+      - core.entity_view_mode.node.rss
       - core.entity_view_mode.node.teaser
       - system.action.node_delete_action
       - system.action.node_make_sticky_action
@@ -49,9 +45,12 @@ config:
       - system.action.node_unpublish_action
       - views.view.content
       - views.view.frontpage
+    pathauto: '*'
     quick_node_clone: '*'    
   # Media is installed so include Media persmissions here.
   actions:
+    node.settings:
+      use_admin_theme: true
     user.role.anonymous:
       grantPermissions:
         - 'access user contact forms'
