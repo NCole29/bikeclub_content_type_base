@@ -7,7 +7,6 @@ recipes:
 install:
   - ckeditor5
   - layout_builder
-  - layout_discovery
   - options
   # Contrib.
   - add_content_by_bundle  
@@ -16,18 +15,17 @@ install:
   - layout_builder_admin_theme
   - layout_builder_restrictions
   - layout_paragraphs
-  - linkit
   - paragraphs
   - pathauto
   - quick_node_clone
   - tac_lite
+  - token
   - user_contactlink
    #- tac_lite
 config:
   strict: false
   import:
     contact_storage: '*'
-    linkit: '*'
     pathauto: '*'
     quick_node_clone: '*'    
   # Media is installed so include Media persmissions here.
