@@ -6,6 +6,8 @@ recipes:
   - bikeclub_media
 install:
   - ckeditor5
+  - contextual
+  - editor
   - layout_builder
   - options
   # Contrib.
@@ -40,45 +42,3 @@ config:
         - 'access user contact forms'
         - 'use text format basic_html'
         - 'use text format summary_fields'
-    tac_lite:
-      simpleConfigUpdate:
-        tac_lite_categories:
-          page_access: page_access
-        tac_lite_schemes: 1
-        menu_rebuild_needed: true
-        tac_lite_config_scheme_1:
-          name: 'View access'
-          perms:
-            grant_view: grant_view
-          unpublished: 0
-          term_visibility: 0
-        # 1=Admin, 2=Members, 3=Ride leaders. IDs = 1,2,3 depends on default content imported in bikeclub_starter recipe.
-        tac_lite_grants_scheme_1:
-          anonymous:
-            page_access: {  }
-          authenticated:
-            page_access: {  }
-          administrator:
-            page_access:
-              1: '1'
-              2: '2'
-              3: '3'
-          member:
-            page_access:
-              2: '2'
-          ride_leader:
-            page_access:
-              3: '3'
-          rides_coordinator:
-            page_access:
-              2: '2'
-              3: '3'
-          membership:
-            page_access:
-              2: '2'
-              3: '3'
-          site_admin:
-            page_access:
-              1: '1'
-              2: '2'
-              3: '3'
