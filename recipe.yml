@@ -10,6 +10,7 @@ install:
   - editor
   - layout_builder
   - options
+  - user
   # Contrib.
   - add_content_by_bundle  
   - contact_storage
@@ -29,11 +30,12 @@ config:
   import:
     contact_storage: '*'
     pathauto: '*'
-    quick_node_clone: '*'    
+    quick_node_clone: '*'
   # Media is installed so include Media persmissions here.
   actions:
     node.settings:
-      use_admin_theme: true
+      simpleConfigUpdate:
+        use_admin_theme: true
     user.role.anonymous:
       grantPermissions:
         - 'access user contact forms'

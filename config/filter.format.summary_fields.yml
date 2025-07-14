@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - editor
-    - linkit
     - media
 name: 'Summary fields'
 format: summary_fields
@@ -61,13 +60,6 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
-  linkit:
-    id: linkit
-    provider: linkit
-    status: true
-    weight: 0
-    settings:
-      title: true
   media_embed:
     id: media_embed
     provider: media
