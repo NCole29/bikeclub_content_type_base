@@ -12,15 +12,18 @@ install:
   - options
   - user
   # Contrib.
-  - add_content_by_bundle  
+  - add_content_by_bundle 
+  - conditional_fields  
   - contact_storage
   - entity_reference_revisions
+  - field_group
   - layout_builder_admin_theme
   - layout_builder_restrictions
   - layout_paragraphs
   - paragraphs
   - pathauto
   - quick_node_clone
+  - scheduler
   - tac_lite
   - token
   - user_contactlink
@@ -36,6 +39,12 @@ config:
     node.settings:
       simpleConfigUpdate:
         use_admin_theme: true
+    scheduler.settings:
+      simple_config_update:
+        allow_date_only: true
+        default_time: '01:00:00'
+        hide_seconds: true
+        log: false
     user.role.anonymous:
       grantPermissions:
         - 'access user contact forms'
