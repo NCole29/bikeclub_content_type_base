@@ -50,7 +50,6 @@ config:
       - views.view.content_recent
       - views.view.content
       - views.view.frontpage
-    
     pathauto: '*'
     quick_node_clone: '*'
   # Media is installed so include Media persmissions here.
