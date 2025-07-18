@@ -52,6 +52,8 @@ config:
       - views.view.frontpage
     pathauto: '*'
     quick_node_clone: '*'
+    scheduler:
+      - views.view.scheduler_scheduled_content
   # Media is installed so include Media persmissions here.
   actions:
     node.settings:
