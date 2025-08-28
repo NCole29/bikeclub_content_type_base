@@ -1,5 +1,5 @@
 name: 'Bikeclub Content type base'
-description: 'Provides field storage and text editor formats.'
+description: 'Provides field storage, text editors, and basic page content type.'
 type: 'Content field'
 recipes:
   - core/recipes/feedback_contact_form

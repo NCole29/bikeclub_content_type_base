@@ -1,3 +1,4 @@
+uuid: 6a65f5a7-3603-47e9-8dc1-4c52d56900df
 langcode: en
 status: true
 dependencies:
@@ -24,7 +25,7 @@ settings:
       - link
       - blockQuote
       - insertTable
-      - drupalMedia      
+      - drupalMedia
       - style
       - removeFormat
       - specialCharacters
@@ -43,8 +44,6 @@ settings:
         reversed: true
         startIndex: true
       multiBlock: true
-    ckeditor5_sourceEditing:
-      allowed_tags: {  }
     ckeditor5_style:
       styles:
         -
@@ -68,6 +67,8 @@ settings:
         -
           label: 'Dark centered'
           element: '<p class="dark-centered">'
+    ckeditor_link_styles_linkStyles:
+      styles: {  }
     media_media:
       allow_view_mode_override: true
 image_upload:

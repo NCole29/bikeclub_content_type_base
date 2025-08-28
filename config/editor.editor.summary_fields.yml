@@ -1,3 +1,4 @@
+uuid: 9bfb6240-741b-4234-b2fa-9424d0f8296c
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - filter.format.summary_fields
   module:
     - ckeditor5
+_core:
+  default_config_hash: 1AZG3MXodQ1j7YyJQywr8so6SbiiHioMiKroJ5AQEIo
 format: summary_fields
 editor: ckeditor5
 settings:
@@ -19,6 +22,7 @@ settings:
       - numberedList
       - alignment
       - link
+      - drupalMedia
       - style
       - blockQuote
       - removeFormat
@@ -55,7 +59,15 @@ settings:
         -
           label: 'Dark centered'
           element: '<p class="dark-centered">'
+    ckeditor_link_styles_linkStyles:
+      styles: {  }
     media_media:
       allow_view_mode_override: false
 image_upload:
-  status: false
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: null
+  max_dimensions:
+    width: null
+    height: null
