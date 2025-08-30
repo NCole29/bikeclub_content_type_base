@@ -20,7 +20,6 @@ install:
   - entity_reference_revisions
   - field_group
   - layout_builder_admin_theme
-  - layout_builder_restrictions
   - layout_paragraphs
   - paragraphs
   - pathauto
