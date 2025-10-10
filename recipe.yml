@@ -26,7 +26,6 @@ install:
   - quick_node_clone
   - scheduler
   - tac_lite
-  - user_contactlink
 config:
   strict: false
   import:
@@ -55,6 +54,10 @@ config:
       - views.view.scheduler_scheduled_content
   # Media is installed so include Media persmissions here.
   actions:
+    contact.settings:
+      flood:
+        limit: 5
+        interval: 3600
     node.settings:
       simpleConfigUpdate:
         use_admin_theme: true
