@@ -29,6 +29,7 @@ install:
 config:
   strict: false
   import:
+    contact: '*'
     contact_storage: '*'
     node:
       # Import config which is imported by the Standard profile,
@@ -54,10 +55,6 @@ config:
       - views.view.scheduler_scheduled_content
   # Media is installed so include Media persmissions here.
   actions:
-    contact.settings:
-      flood:
-        limit: 5
-        interval: 3600
     node.settings:
       simpleConfigUpdate:
         use_admin_theme: true
