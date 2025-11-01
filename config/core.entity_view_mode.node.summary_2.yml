@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.summary_2
+label: 'Summary two columns'
+description: "Displays, in two columns, \"Summary for home page\" on home page or other list view.\r\nStyling is set in bikeclub/components."
+targetEntityType: node
+cache: true

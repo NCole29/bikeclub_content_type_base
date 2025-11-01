@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: day_date_time_short
+label: 'Day, date, time - short'
+locked: false
+pattern: 'D, M j Y, g:ia'
