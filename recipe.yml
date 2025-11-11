@@ -17,6 +17,7 @@ install:
   - add_content_by_bundle 
   - conditional_fields  
   - contact_storage
+  - diff
   - entity_reference_revisions
   - field_group
   - layout_builder_admin_theme
@@ -57,6 +58,15 @@ config:
       - views.view.scheduler_scheduled_content
   # Media is installed so include Media persmissions here.
   actions:
+    diff.settings:
+      simpleConfigUpdate:
+        general_settings:
+          context_lines_leading: 0
+          context_lines_trailing: 0
+          layout_plugins:
+            visual_inline:
+              enabled: true
+              weight: 5
     node.settings:
       simpleConfigUpdate:
         use_admin_theme: true
